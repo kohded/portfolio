@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Font
+// @type List
+$font-primary: "Source Sans Pro", sans-serif !default;
+$font-code: "Source Code Pro", "Consolas", "DejaVu Sans Mono", monospace !default;
+
+// Color
+// @type Color
+$color-primary: #00b1cd !default;
+$color-secondary: #154261 !default;
+$color-accent: #0a2035 !default;
+$color-black: #000;
+$color-white: #fff;
+$color-text-primary: #757575 !default;
+$color-text-secondary: #00b1cd !default;
+$color-text-black: #333 !default;
+$color-text-white: #fff !default;
+
+// Container's maximum width
+// @type Length
+$max-width: 80em !default; // 1280px
+
+// Breakpoints map
+// @prop {String} keys - Keys are identifiers mapped to a given length
+// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  medium: 48em, // 768px
+  large: 64em // 1024px
+) !default;
+
+// Padding map
+$padding: (
+  small: 0.5em, // 8px
+  medium: 1em, // 16px
+  large: 1.5em // 24px
+) !default;
+
+// Relative or absolute URL where all assets are served from
+// @type String
+// $base-url: "http://localhost/assets/";
+$base-url: "/assets/" !default;

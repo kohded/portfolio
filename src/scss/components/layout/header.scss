@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+
+.header {
+  background-color: $color-primary;
+  color: $color-text-white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 map-get($padding, small);
+}
