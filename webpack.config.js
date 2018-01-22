@@ -71,8 +71,8 @@ module.exports = {
               options: {
                 resources: [
                   'src/scss/utils/_variables.scss',
-                  'src/scss/utils/_functions.scss',
-                  'src/scss/utils/_mixins.scss',
+                  'src/scss/utils/functions/*',
+                  'src/scss/utils/mixins/*',
                 ],
               },
             },

@@ -4,7 +4,9 @@ import styles from 'scss/components/layout/footer.scss';
 
 const footer = () => (
   <footer styleName="footer">
-    <p>Copyright &copy; 2017 Kohded</p>
+    <div styleName="container">
+      <p>Copyright &copy; 2017 Kohded</p>
+    </div>
   </footer>
 );
 

@@ -1,4 +1,19 @@
-// -----------------------------------------------------------------------------
-// Home
-// -----------------------------------------------------------------------------
+@include container-wrapper(page) {
+  flex: 1;
 
+  @include container {
+    p {
+      font-size: fonts(m);
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .page {
+    .container {
+      p {
+        font-size: fonts(l);
+      }
+    }
+  }
+}

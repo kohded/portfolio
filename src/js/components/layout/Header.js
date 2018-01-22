@@ -6,8 +6,12 @@ import Nav from './Nav';
 
 const header = () => (
   <header styleName="header">
-    <img alt="Logo" src={logoImage} />
-    <Nav />
+    <div styleName="container">
+      <a href="/" styleName="logo-link">
+        <img alt="Logo" src={logoImage} styleName="logo-image" />
+      </a>
+      <Nav />
+    </div>
   </header>
 );
 

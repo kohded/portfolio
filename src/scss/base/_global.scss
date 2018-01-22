@@ -1,0 +1,21 @@
+:global {
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: breakpoints(min-height, app);
+  }
+}

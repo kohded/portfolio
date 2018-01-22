@@ -1,44 +1,73 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
-
-// Font
-// @type List
-$font-primary: "Source Sans Pro", sans-serif !default;
-$font-code: "Source Code Pro", "Consolas", "DejaVu Sans Mono", monospace !default;
-
-// Color
-// @type Color
-$color-primary: #00b1cd !default;
-$color-secondary: #154261 !default;
-$color-accent: #0a2035 !default;
-$color-black: #000;
-$color-white: #fff;
-$color-text-primary: #757575 !default;
-$color-text-secondary: #00b1cd !default;
-$color-text-black: #333 !default;
-$color-text-white: #fff !default;
-
-// Container's maximum width
-// @type Length
-$max-width: 80em !default; // 1280px
-
-// Breakpoints map
-// @prop {String} keys - Keys are identifiers mapped to a given length
-// @prop {Map} values - Values are actual breakpoints expressed in pixels
+// width - m: 641px, l: 1008px = 960px + (24px x 2)
+// container - max-width: 960px, min-width: 319px
 $breakpoints: (
-  medium: 48em, // 768px
-  large: 64em // 1024px
+  app: (
+    min-height: 100vh,
+    min-width: 19.938em
+  ),
+  container: (
+    max-width: 60em,
+  ),
+  text: (
+    s: s,
+    m: m,
+    l: l,
+  ),
+  width: (
+    m: 40.063em,
+    l: 63em,
+  )
 ) !default;
 
-// Padding map
-$padding: (
-  small: 0.5em, // 8px
-  medium: 1em, // 16px
-  large: 1.5em // 24px
+$colors: (
+  palette: (
+    accent: #0a2035,
+    black: #000,
+    gray-light: #e6e6e6,
+    gray-medium: #cdcdcd,
+    gray-dark: #7f7f7f,
+    primary: #00b1cd,
+    secondary: #154261,
+    white: #fff
+  ),
+  text: (
+    black: #000,
+    primary: #333,
+    secondary: #00b1cd,
+    white: #fff
+  )
 ) !default;
 
-// Relative or absolute URL where all assets are served from
-// @type String
-// $base-url: "http://localhost/assets/";
-$base-url: "/assets/" !default;
+// xs: 14px, s: 16px, m: 18px, l: 20px
+$fonts: (
+  family: (
+    code: #{"Source Code Pro", "Consolas", "DejaVu Sans Mono", monospace},
+    primary: #{"Source Sans Pro", sans-serif}
+  ),
+  size: (
+    xs: 0.875rem,
+    s: 1rem,
+    m: 1.125rem,
+    l: 1.25rem,
+  )
+) !default;
+
+// xs: 8px, s: 16px, m: 24px, l: 32px
+$margins: (
+  xs: 0.5rem,
+  s: 1rem,
+  m: 1.5rem,
+  l: 2rem,
+) !default;
+
+$paddings: (
+  xs: 0.5rem,
+  s: 1rem,
+  m: 1.5rem,
+  l: 2rem,
+) !default;
+
+// Relative or absolute URL for all assets - "http://localhost/assets/"
+$urls: (
+  assets: "../public/assets/",
+) !default;

@@ -1,0 +1,31 @@
+@function breakpoints($size, $group: text) {
+  @return map-get(map-get($breakpoints, $group), $size);
+}
+
+@function colors($color, $group: palette) {
+  @return map-get(map-get($colors, $group), $color);
+}
+
+@function fonts($property, $group: size) {
+  @return map-get(map-get($fonts, $group), $property);
+}
+
+@function margins($size) {
+  @return map-get($margins, $size);
+}
+
+@function paddings($size) {
+  @return map-get($paddings, $size);
+}
+
+@function urls($path, $file, $folder: assets) {
+  @return url(map-get($url, $folder) + $path + "/" + $file);
+}
+
+@function urls-font($file) {
+  @return urls(fonts, $file);
+}
+
+@function urls-image($file) {
+  @return urls(images, $file);
+}

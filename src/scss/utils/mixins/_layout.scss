@@ -1,0 +1,36 @@
+@mixin container-wrapper($container-wrapper, $background-color: null, $color: null) {
+  .#{$container-wrapper} {
+    background-color: $background-color;
+    color: $color;
+    display: flex;
+    justify-content: center;
+
+    @content;
+  }
+}
+
+@mixin container {
+  .container {
+    flex-basis: breakpoints(max-width, container);
+
+    @content;
+  }
+}
+
+@mixin media($breakpoint) {
+  @media (min-width: breakpoints($breakpoint, width)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint($breakpoint) {
+  @if $breakpoint == breakpoints(m) {
+    @include media($breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == breakpoints(l) {
+    @include media($breakpoint) {
+      @content;
+    }
+  }
+}

@@ -1,18 +1,15 @@
 @charset "UTF-8";
 
-// 1. Vendors
-@import
-  "vendors/vendors";
+@import "vendors/vendors";
 
-// 2. Configuration and helpers
 @import
   "utils/variables",
-  "utils/functions",
-  "utils/helpers",
-  "utils/mixins";
+  "utils/functions/variables",
+  "utils/mixins/global",
+  "utils/mixins/helpers",
+  "utils/mixins/layout";
 
-// 3. Base stuff
 @import
-  "base/base",
+  "base/global",
   "base/fonts",
   "base/typography";

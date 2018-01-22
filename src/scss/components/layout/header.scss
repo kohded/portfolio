@@ -1,11 +1,35 @@
-// -----------------------------------------------------------------------------
-// Header
-// -----------------------------------------------------------------------------
+@include container-wrapper(header, colors(primary)) {
+  @include container {
+    .logo-link {
+      margin-left: margins(s);
 
-.header {
-  background-color: $color-primary;
-  color: $color-text-white;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 map-get($padding, small);
+      .logo-image {
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .header {
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      .logo-link {
+        margin-left: margins(m);
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .header {
+    .container {
+      .logo-link {
+        margin-left: 0;
+      }
+    }
+  }
 }

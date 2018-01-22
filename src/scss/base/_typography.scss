@@ -1,7 +1,12 @@
-// -----------------------------------------------------------------------------
-// Basic typography style for copy text.
-// -----------------------------------------------------------------------------
+:global {
+  body {
+    color: colors(primary, text);
+    font-family: fonts(primary, family);
+    font-size: fonts(s);
+    line-height: 1.5;
 
-body {
-  font-family: $font-primary;
+    a {
+      text-decoration: none;
+    }
+  }
 }

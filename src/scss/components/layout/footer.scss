@@ -1,9 +1,21 @@
-// -----------------------------------------------------------------------------
-// Footer
-// -----------------------------------------------------------------------------
+@include container-wrapper(footer, colors(accent), colors(white, text)) {
+  @include container {
+    padding: 0 paddings(s);
+  }
+}
 
-.footer {
-  background-color: $color-accent;
-  color: $color-text-white;
-  padding: map-get($padding, small);
+@include media-breakpoint(breakpoints(m)) {
+  .footer {
+    .container {
+      padding: 0 paddings(m);
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .footer {
+    .container {
+      padding: 0;
+    }
+  }
 }
