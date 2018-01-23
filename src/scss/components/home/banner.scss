@@ -1,0 +1,15 @@
+.banner-background {
+  background-color: colors(primary);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include container(banner-container) {
+    .banner-image {
+      display: block;
+      margin: 0 auto;
+      max-width: breakpoints(max-width, container);
+      width: 100%;
+    }
+  }
+}

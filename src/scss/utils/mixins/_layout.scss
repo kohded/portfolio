@@ -1,17 +1,23 @@
-@mixin container-wrapper($container-wrapper, $background-color: null, $color: null) {
+@mixin container-wrapper($container-wrapper, $background-color: null, $color: null, $direction: row) {
   .#{$container-wrapper} {
     background-color: $background-color;
     color: $color;
     display: flex;
-    justify-content: center;
+
+    @if $direction == row {
+      justify-content: center;
+    } @else if $direction == column {
+      align-items: center;
+      flex-direction: column;
+    }
 
     @content;
   }
 }
 
-@mixin container {
-  .container {
-    flex-basis: breakpoints(max-width, container);
+@mixin container($container: container) {
+  .#{$container} {
+    width: breakpoints(max-width, container);
 
     @content;
   }

@@ -1,7 +1,7 @@
-@include container-wrapper(page) {
+@include container-wrapper(page, $direction: column) {
   flex: 1;
 
-  @include container {
+  @include container(main) {
     p {
       font-size: fonts(m);
     }
@@ -10,7 +10,7 @@
 
 @include media-breakpoint(breakpoints(m)) {
   .page {
-    .container {
+    .main {
       p {
         font-size: fonts(l);
       }
