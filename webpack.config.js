@@ -26,13 +26,25 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.(gif|jpg|png|svg)$/i,
+        test: /\.(docx|pdf)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/img/',
+              outputPath: 'assets/docs/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(gif|jpg|png|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/',
             },
           },
           {
@@ -103,9 +115,11 @@ module.exports = {
   ],
   resolve: {
     alias: {
+      js: path.resolve(__dirname, 'src/js'),
       components: path.resolve(__dirname, 'src/js/components'),
       pages: path.resolve(__dirname, 'src/js/pages'),
       images: path.resolve(__dirname, 'src/public/assets/images'),
+      docs: path.resolve(__dirname, 'src/public/assets/docs'),
       scss: path.resolve(__dirname, 'src/scss'),
     },
   },

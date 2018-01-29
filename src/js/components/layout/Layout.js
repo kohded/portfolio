@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from 'components/layout/Footer';
+import Header from 'components/layout/Header';
 
 const layout = props => (
   <Fragment>

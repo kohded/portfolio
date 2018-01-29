@@ -1,11 +1,7 @@
-@include container-wrapper(header, colors(primary)) {
+@include wrapper(header, colors(primary)) {
   @include container {
     .logo-link {
       margin-left: margins(s);
-
-      .logo-image {
-        vertical-align: top;
-      }
     }
   }
 }
