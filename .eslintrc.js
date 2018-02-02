@@ -21,6 +21,10 @@ module.exports = {
     'react',
   ],
   rules: {
+    'jsx-a11y/anchor-is-valid': ['error', {
+      components: ['Link'],
+      specialLink: ['to'],
+    }],
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
   },
   settings: {

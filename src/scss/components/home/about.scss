@@ -1,9 +1,9 @@
 @include wrapper(about) {
   @include container(container, column) {
     background-color: colors(white);
-    border-radius: 4px;
-    box-shadow: 0 0 4px 1px colors(gray-dark);
-    margin: -6vh margins(s) 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
+    margin: -6vh margins(s);
     padding: paddings(s);
     text-align: center;
     z-index: 1;
@@ -13,10 +13,10 @@
       margin: margins(s) 0 margins(xs);
 
       .account-link {
-        border-radius: 6px;
+        border-radius: 0.375rem;
 
         @include on-event-hover {
-          box-shadow: 0 0 4px 1px colors(gray-dark);
+          box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
         }
       }
 
@@ -26,25 +26,25 @@
 
       .logo-svg {
         height: auto;
-        width: 25px;
+        width: 1.5625rem;
       }
     }
 
     .arnold-jpg {
-      border: 1px solid;
+      border: 0.0625rem solid;
       border-radius: 50%;
       height: auto;
-      max-width: 75px;
+      max-width: 4.6875rem;
     }
 
     .resume-link {
       background-color: colors(accent);
-      border-radius: 4px;
+      border-radius: 0.25rem;
       color: colors(white, text);
       padding: paddings(s);
 
       @include on-event-hover {
-        box-shadow: 0 0 4px 1px colors(gray-dark);
+        box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
       }
     }
 
@@ -57,18 +57,18 @@
 @include media-breakpoint(breakpoints(m)) {
   .about {
     .container {
-      margin: -13vh margins(m) 0;
+      margin: -13vh margins(m);
       padding: paddings(m);
       width: calc(#{breakpoints(max-width, container)} - 3rem);
 
       .accounts {
         .logo-svg {
-          width: 30px;
+          width: 1.875rem;
         }
       }
 
       .arnold-jpg {
-        max-width: 100px;
+        max-width: 6.25rem;
       }
     }
   }
@@ -77,22 +77,22 @@
 @include media-breakpoint(breakpoints(l)) {
   .about {
     .container {
-      margin: -13vh 0 0;
+      margin: -13vh 0;
       padding: paddings(l);
       width: breakpoints(max-width, container);
 
       .accounts {
         .account-link {
-          border-radius: 8px;
+          border-radius: 0.5rem;
         }
 
         .logo-svg {
-          width: 35px;
+          width: 2.1875rem;
         }
       }
 
       .arnold-jpg {
-        max-width: 125px;
+        max-width: 7.8125rem;
       }
     }
   }

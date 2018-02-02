@@ -1,0 +1,121 @@
+@include wrapper(resume, colors(gray-light)) {
+  @include container(container) {
+    padding: 6vh paddings(s) paddings(s);
+    text-align: center;
+
+    > * :last-child {
+      margin-bottom: 0;
+    }
+
+    > :last-child {
+      padding-top: paddings(s);
+    }
+
+    > :not(:last-child) {
+      border-bottom: 1px solid colors(gray-medium);
+      padding: paddings(s) 0;
+    }
+
+    h2 {
+      color: colors(secondary, text);
+    }
+
+    .certificates {
+      .scrum-alliance-link {
+        color: colors(secondary, text);
+      }
+    }
+
+    .education,
+    .certificates {
+      h3 {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-style: italic;
+      }
+    }
+
+    .education p:nth-of-type(odd) {
+      margin-bottom: 0;
+    }
+
+    .skills {
+      .icons {
+        span {
+          border: 0.25rem solid;
+          border-color: colors(white) colors(primary) colors(secondary) colors(accent);
+          border-radius: 50%;
+          display: inline-block;
+          margin: margins(xs);
+          position: relative;
+          transform: rotate(45deg);
+
+          img {
+            height: 4.0625rem;
+            max-width: 4.0625rem;
+            padding: 0.6875rem;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .resume {
+    .container {
+      padding: 13vh paddings(m) paddings(m);
+
+      > :last-child {
+        padding-top: paddings(m);
+      }
+
+      > :not(:last-child) {
+        padding: paddings(m) 0;
+      }
+
+      .skills {
+        .icons {
+          span {
+            img {
+              height: 5rem;
+              max-width: 5rem;
+              padding: 0.8125rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .resume {
+    .container {
+      padding: 13vh 0 paddings(l);
+
+      > :last-child {
+        padding-top: paddings(l);
+      }
+
+      > :not(:last-child) {
+        padding: paddings(l) 0;
+      }
+
+      .skills {
+        .icons {
+          span {
+            img {
+              height: 5.9375rem;
+              max-width: 5.9375rem;
+              padding: 0.9375rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
