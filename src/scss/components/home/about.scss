@@ -1,7 +1,6 @@
 @include wrapper(about) {
   @include container(container, column) {
     background-color: colors(white);
-    border-radius: 0.25rem;
     box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
     margin: -6vh margins(s);
     padding: paddings(s);
@@ -39,7 +38,6 @@
 
     .resume-link {
       background-color: colors(accent);
-      border-radius: 0.25rem;
       color: colors(white, text);
       padding: paddings(s);
 
