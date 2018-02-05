@@ -15,6 +15,7 @@ module.exports = {
     port: 8000,
     stats: 'minimal',
   },
+  devtool: isProduction ? 'source-map' : 'eval-source-map',
   entry: {
     app: path.join(__dirname, 'src/js/index.js'),
   },
