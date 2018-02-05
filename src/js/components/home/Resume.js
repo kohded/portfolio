@@ -1,12 +1,12 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
-import icons from 'data/icons';
+import { skillIcons } from 'data/icons';
 import styles from 'scss/components/home/resume.scss';
 
 const resume = () => {
-  const renderSkillsIcons = () => Object.keys(icons)
-    .map(name => <span key={name}><img src={icons[name]} alt={`${name} icon`} /></span>);
+  const renderSkillIcons = () => Object.keys(skillIcons)
+    .map(name => <span key={name}><img src={skillIcons[name]} alt={`${name} icon`} /></span>);
 
   return (
     <div styleName="resume">
@@ -14,7 +14,7 @@ const resume = () => {
         <section styleName="skills">
           <h2>SKILLS</h2>
           <div styleName="icons">
-            {renderSkillsIcons()}
+            {renderSkillIcons()}
           </div>
         </section>
         <section styleName="education">

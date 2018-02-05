@@ -12,21 +12,21 @@
       display: flex;
       margin: margins(s) 0 margins(xs);
 
-      .account-link {
+      a {
         border-radius: 0.375rem;
 
         @include on-event-hover {
           box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
         }
+
+        img {
+          height: auto;
+          width: 1.5625rem;
+        }
       }
 
-      .account-link:not(:last-child) {
+      a:not(:last-child) {
         margin-right: margins(s);
-      }
-
-      .logo-svg {
-        height: auto;
-        width: 1.5625rem;
       }
     }
 
@@ -62,8 +62,10 @@
       width: calc(#{breakpoints(max-width, container)} - 3rem);
 
       .accounts {
-        .logo-svg {
-          width: 1.875rem;
+        a {
+          img {
+            width: 1.875rem;
+          }
         }
       }
 
@@ -82,12 +84,12 @@
       width: breakpoints(max-width, container);
 
       .accounts {
-        .account-link {
+        a {
           border-radius: 0.5rem;
-        }
 
-        .logo-svg {
-          width: 2.1875rem;
+          img {
+            width: 2.1875rem;
+          }
         }
       }
 
