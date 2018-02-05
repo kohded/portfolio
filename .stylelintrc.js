@@ -9,7 +9,7 @@ module.exports = {
     }],
     'at-rule-no-unknown': null, // scss/at-rule-no-unknown
     'block-closing-brace-newline-after': ['always', {
-      ignoreAtRules: ['if'],
+      ignoreAtRules: ['else', 'if'],
     }],
     'scss/at-else-empty-line-before': 'never',
     'scss/at-rule-no-unknown': true,
