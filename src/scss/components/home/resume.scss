@@ -43,12 +43,14 @@
 
     .skills {
       .icons {
+        overflow: hidden;
+
         span {
           border: 0.25rem solid;
           border-color: colors(white) colors(primary) colors(secondary) colors(accent);
           border-radius: 50%;
           display: inline-block;
-          margin: margins(xs);
+          margin: margins(xxs);
           position: relative;
           transform: rotate(45deg);
 
@@ -80,6 +82,8 @@
       .skills {
         .icons {
           span {
+            margin: margins(xs);
+
             img {
               height: 5rem;
               max-width: 5rem;
