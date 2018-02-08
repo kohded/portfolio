@@ -5,21 +5,23 @@ import styles from 'scss/components/ui/chip.scss';
 
 const chip = props => (
   <div className={props.className} styleName="chip">
-    <img src={props.icon} alt={`${props.name} icon`} />
-    <span>{props.name}</span>
+    <img alt={props.alt} src={props.image} />
+    <span>{props.text}</span>
   </div>
 );
 
 chip.defaultProps = {
+  alt: undefined,
   className: undefined,
-  icon: undefined,
-  name: undefined,
+  image: undefined,
+  text: undefined,
 };
 
 chip.propTypes = {
+  alt: PropTypes.string,
   className: PropTypes.string,
-  icon: PropTypes.string,
-  name: PropTypes.string,
+  image: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default CSSModules(chip, styles);
