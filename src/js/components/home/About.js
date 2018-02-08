@@ -1,6 +1,7 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
+import Card from 'components/ui/Card';
 import { accountIcons } from 'data/icons';
 import resumeDocx from 'docs/arnold-koh-resume.docx';
 import arnoldJpg from 'images/home/arnold.jpg';
@@ -19,7 +20,7 @@ const about = () => {
 
   return (
     <div styleName="about">
-      <section styleName="container">
+      <Card element="section" styleName="container">
         <img src={arnoldJpg} alt="Arnold Koh" styleName="arnold-jpg" />
         <div styleName="accounts">
           {renderAccountIcons()}
@@ -36,7 +37,7 @@ const about = () => {
         <a href={resumeDocx} download="arnold-koh-resume" styleName="resume-link">
           DOWNLOAD RESUME
         </a>
-      </section>
+      </Card>
     </div>
   );
 };

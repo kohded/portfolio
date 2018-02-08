@@ -1,9 +1,7 @@
 @include wrapper(about) {
   @include container(container, column) {
     background-color: colors(white);
-    box-shadow: 0 0 0.25rem 0.0625rem colors(gray-dark);
     margin: -6vh margins(s);
-    padding: paddings(s);
     text-align: center;
     z-index: 1;
 
@@ -56,7 +54,6 @@
   .about {
     .container {
       margin: -13vh margins(m);
-      padding: paddings(m);
       width: calc(#{breakpoints(max-width, container)} - 3rem);
 
       .accounts {
@@ -78,7 +75,6 @@
   .about {
     .container {
       margin: -13vh 0;
-      padding: paddings(l);
       width: breakpoints(max-width, container);
 
       .accounts {
