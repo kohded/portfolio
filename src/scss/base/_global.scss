@@ -5,6 +5,10 @@
     box-sizing: inherit;
   }
 
+  *:not(body) {
+    transition: all 0.4s ease;
+  }
+
   html {
     box-sizing: border-box;
   }
