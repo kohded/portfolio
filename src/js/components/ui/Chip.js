@@ -5,8 +5,8 @@ import styles from 'scss/components/ui/chip.scss';
 
 const chip = props => (
   <div className={props.className} styleName="chip">
-    <img alt={props.alt} src={props.image} />
-    <span>{props.text}</span>
+    {props.image ? <img alt={props.alt} src={props.image} /> : undefined}
+    {props.text ? <span>{props.text}</span> : undefined}
   </div>
 );
 
