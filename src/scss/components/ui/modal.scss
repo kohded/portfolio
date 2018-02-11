@@ -1,0 +1,30 @@
+.modal {
+  background-color: colors(white);
+  color: colors(primary, text);
+  left: 50%;
+  max-width: calc(#{breakpoints(s, width)} - (#{margins(s)} * 2));
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - (#{margins(s)} * 2));
+  z-index: 30;
+}
+
+.modal-close {
+  opacity: 0;
+  transform: translate(-50%, -100vh);
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .modal {
+    max-width: calc(#{breakpoints(max-width, container)} - (#{margins(m)} * 2));
+    width: calc(100% - (#{margins(m)} * 2));
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .modal {
+    max-width: breakpoints(max-width, container);
+    width: 100%;
+  }
+}
