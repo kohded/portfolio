@@ -1,5 +1,5 @@
 @include wrapper(banner, colors(primary)) {
-  @include container(container, column) {
+  @include container($direction: column) {
     .image {
       max-width: breakpoints(max-width, container);
       width: 100%;

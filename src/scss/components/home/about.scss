@@ -1,5 +1,5 @@
 @include wrapper(about) {
-  @include container(container, column) {
+  @include container($direction: column) {
     background-color: colors(white);
     margin: -6vh margins(s);
     text-align: center;

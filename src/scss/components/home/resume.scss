@@ -1,5 +1,5 @@
 @include wrapper(resume, colors(gray-light)) {
-  @include container(container) {
+  @include container {
     padding: 6vh paddings(s) paddings(s);
     text-align: center;
 
