@@ -1,11 +1,38 @@
 .backdrop {
-  background-color: colors(black);
+  background-color: colors(black-transparent);
   cursor: pointer;
   height: 100%;
   left: 0;
-  opacity: 0.5;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 20;
+
+  img {
+    position: absolute;
+    right: margins(s);
+    top: margins(s);
+
+    @include on-event-hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .backdrop {
+    img {
+      right: margins(m);
+      top: margins(m);
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .backdrop {
+    img {
+      right: margins(l);
+      top: margins(l);
+    }
+  }
 }
