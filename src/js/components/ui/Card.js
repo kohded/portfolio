@@ -29,7 +29,7 @@ card.defaultProps = {
   onClick: undefined,
   onKeyUp: undefined,
   role: undefined,
-  tabIndex: -1,
+  tabIndex: undefined,
 };
 
 card.propTypes = {
