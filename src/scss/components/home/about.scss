@@ -7,7 +7,7 @@
 
     .accounts {
       display: flex;
-      margin: margins(s) 0 margins(xs);
+      margin: margins(s) 0;
 
       a {
         border-radius: 0.375rem;
@@ -35,7 +35,7 @@
     }
 
     .resume-link {
-      background-color: colors(accent);
+      background-color: colors(primary);
       color: colors(white, text);
       padding: paddings(s);
 

@@ -22,7 +22,11 @@
 
     .certificates {
       .scrum-alliance-link {
-        color: colors(secondary, text);
+        color: colors(amber, text);
+
+        @include on-event {
+          box-shadow: inset 0 -1px 0 0 colors(gray-medium);
+        }
       }
     }
 
