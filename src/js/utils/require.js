@@ -2,16 +2,12 @@ const requireAsset = (asset) => {
   const assets = {};
 
   asset.keys().forEach((item) => {
-    assets[item.replace('./', '')] = asset(item);
+    assets[item.replace(/^.*[\\/]/, '')] = asset(item);
   });
 
   return assets;
 };
 
-const accountIcon = requireAsset(require.context('images/icons/account', false, /\.svg$/));
-const devIcon = requireAsset(require.context('images/icons/dev', false, /\.svg$/));
+const image = requireAsset(require.context('images', true, /\.(jpg|svg)$/));
 
-export {
-  accountIcon,
-  devIcon,
-};
+export default image;

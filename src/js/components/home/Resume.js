@@ -2,11 +2,11 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
 import styles from 'scss/components/home/resume.scss';
-import { skillIcons } from 'utils/icons';
+import { devIcons } from 'utils/icons';
 
 const resume = () => {
-  const renderSkillIcons = () => Object.keys(skillIcons)
-    .map(name => <span key={name}><img src={skillIcons[name]} alt={`${name} icon`} /></span>);
+  const renderSkillIcons = () => Object.keys(devIcons)
+    .map(name => <span key={name}><img src={devIcons[name]} alt={`${name} icon`} /></span>);
 
   return (
     <div styleName="resume">
