@@ -34,7 +34,10 @@
         border-bottom: none;
 
         a {
+          align-items: center;
           color: colors(white, text);
+          display: flex;
+          height: 50px;
           padding: 0.8125rem paddings(s);
 
           @include on-event-hover {
