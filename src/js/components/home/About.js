@@ -26,7 +26,7 @@ const about = () => {
           {renderAccountIcons()}
         </div>
         <h1>ARNOLD KOH</h1>
-        <h3>SOFTWARE DEVELOPER</h3>
+        <h2>SOFTWARE DEVELOPER</h2>
         <p styleName="summary">
           Recent graduate with project experience in all phases of software development life cycle
           using agile methodologies, from collaborating with clients in the planning stage, software

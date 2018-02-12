@@ -12,25 +12,25 @@ const resume = () => {
     <div styleName="resume">
       <div styleName="container">
         <section styleName="skills">
-          <h2>SKILLS</h2>
+          <h1>SKILLS</h1>
           <div styleName="icons">
             {renderSkillIcons()}
           </div>
         </section>
         <section styleName="education">
-          <h2>EDUCATION</h2>
-          <h3>Green River College</h3>
+          <h1>EDUCATION</h1>
+          <h2>Green River College</h2>
           <p>Bachelor&apos;s Degree in Software Development &#8226; June 2017</p>
           <p>GPA 3.93 &#8226; summa cum laude</p>
-          <h3>Seattle Central College</h3>
+          <h2>Seattle Central College</h2>
           <p>Associate&apos;s Degree in Web Development &#8226; June 2015</p>
           <p>GPA 3.96 &#8226; Dean&apos;s List &#8226; President&apos;s List</p>
         </section>
         <section styleName="certificates">
-          <h2>CERTIFICATES</h2>
-          <h3>Web Application Development</h3>
+          <h1>CERTIFICATES</h1>
+          <h2>Web Application Development</h2>
           <p>Green River College &#8226; December 2016</p>
-          <h3>Certified Scrum Master</h3>
+          <h2>Certified Scrum Master</h2>
           <p>Scrum Alliance &#8226; July 2016 &#8226;
             <Link
               rel="noopener noreferrer"
