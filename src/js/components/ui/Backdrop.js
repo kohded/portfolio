@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import closeSVG from 'images/icons/ui/close.svg';
+import closeSvg from 'images/icons/ui/close.svg';
 import styles from 'scss/components/ui/backdrop.scss';
 
 const backdrop = props => (
@@ -14,7 +14,7 @@ const backdrop = props => (
       styleName="backdrop"
       tabIndex={0}
     >
-      <img alt="Close" src={closeSVG} />
+      <img alt="Close" src={closeSvg} />
     </div> :
     undefined
 );

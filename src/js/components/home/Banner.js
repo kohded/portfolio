@@ -1,12 +1,12 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import bannerImage from 'images/home/banner.svg';
+import bannerSvg from 'images/home/banner.svg';
 import styles from 'scss/components/home/banner.scss';
 
 const banner = () => (
   <div styleName="banner">
     <div styleName="container">
-      <img alt="Intro banner" src={bannerImage} styleName="image" />
+      <img alt="Intro banner" src={bannerSvg} styleName="image" />
     </div>
   </div>
 );
