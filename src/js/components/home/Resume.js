@@ -1,8 +1,8 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
-import { skillIcons } from 'data/icons';
 import styles from 'scss/components/home/resume.scss';
+import { skillIcons } from 'utils/icons';
 
 const resume = () => {
   const renderSkillIcons = () => Object.keys(skillIcons)

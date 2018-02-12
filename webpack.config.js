@@ -121,6 +121,7 @@ module.exports = {
       components: path.resolve(__dirname, 'src/js/components'),
       data: path.resolve(__dirname, 'src/js/data'),
       pages: path.resolve(__dirname, 'src/js/pages'),
+      utils: path.resolve(__dirname, 'src/js/utils'),
       images: path.resolve(__dirname, 'src/public/assets/images'),
       docs: path.resolve(__dirname, 'src/public/assets/docs'),
       scss: path.resolve(__dirname, 'src/scss'),

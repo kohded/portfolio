@@ -2,10 +2,11 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
 import Card from 'components/ui/Card';
-import { accountIcons } from 'data/icons';
+import links from 'data/links';
 import resumeDocx from 'docs/arnold-koh-resume.docx';
 import arnoldJpg from 'images/home/arnold.jpg';
 import styles from 'scss/components/home/about.scss';
+import { accountIcons } from 'utils/icons';
 
 const about = () => {
   const renderAccountIcons = () => Object.keys(accountIcons).map(name => (
@@ -13,8 +14,8 @@ const about = () => {
       key={name}
       rel="noopener noreferrer"
       target="_blank"
-      to={accountIcons[name].link}
-    ><img src={accountIcons[name].svg} alt={`${name} icon`} />
+      to={links.accounts[name]}
+    ><img src={accountIcons[name]} alt={`${name} icon`} />
     </Link>
   ));
 
