@@ -8,8 +8,8 @@ const backdrop = props => (
   props.isOpen ?
     <div
       aria-label="Close"
-      onClick={props.onClickToggle}
-      onKeyUp={props.onKeyUpToggle}
+      onClick={props.onBackdropClick}
+      onKeyUp={props.onBackdropKeyUp}
       role="button"
       styleName="backdrop"
       tabIndex={0}
@@ -21,14 +21,14 @@ const backdrop = props => (
 
 backdrop.defaultProps = {
   isOpen: false,
-  onClickToggle: undefined,
-  onKeyUpToggle: undefined,
+  onBackdropClick: undefined,
+  onBackdropKeyUp: undefined,
 };
 
 backdrop.propTypes = {
   isOpen: PropTypes.bool,
-  onClickToggle: PropTypes.func,
-  onKeyUpToggle: PropTypes.func,
+  onBackdropClick: PropTypes.func,
+  onBackdropKeyUp: PropTypes.func,
 };
 
 export default CSSModules(backdrop, styles);

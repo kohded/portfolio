@@ -9,8 +9,8 @@ const modal = props => (
   <Fragment>
     <Backdrop
       isOpen={props.isOpen}
-      onClickToggle={props.onClickToggle}
-      onKeyUpToggle={props.onKeyUpToggle}
+      onBackdropClick={props.onModalClick}
+      onBackdropKeyUp={props.onModalKeyUp}
     />
     <Card
       className={props.className}
@@ -26,8 +26,8 @@ modal.defaultProps = {
   children: undefined,
   className: undefined,
   isOpen: false,
-  onClickToggle: undefined,
-  onKeyUpToggle: undefined,
+  onModalClick: undefined,
+  onModalKeyUp: undefined,
 };
 
 modal.propTypes = {
@@ -37,8 +37,8 @@ modal.propTypes = {
   ]),
   className: PropTypes.string,
   isOpen: PropTypes.bool,
-  onClickToggle: PropTypes.func,
-  onKeyUpToggle: PropTypes.func,
+  onModalClick: PropTypes.func,
+  onModalKeyUp: PropTypes.func,
 };
 
 export default CSSModules(modal, styles, { allowMultiple: true });
