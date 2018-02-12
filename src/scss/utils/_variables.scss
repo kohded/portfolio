@@ -1,9 +1,8 @@
-// width - m: 641px, l: 1008px = 960px + (24px x 2)
-// container - max-width: 960px, min-width: 319px
+// width (s:640px, m:641px, l:1008px = 960px + (24px x 2))
+// container(max-width:960px)
 $breakpoints: (
   app: (
     min-height: 100vh,
-    min-width: 19.938em
   ),
   container: (
     max-width: 60em,
@@ -14,6 +13,7 @@ $breakpoints: (
     l: l,
   ),
   width: (
+    s: 40em,
     m: 40.063em,
     l: 63em,
   )
@@ -24,6 +24,7 @@ $colors: (
     accent: #0a2035,
     amber: #fdc00f,
     black: #000,
+    black-transparent: rgba(0, 0, 0, 0.5),
     gray-light: #e6e6e6,
     gray-medium: #cdcdcd,
     gray-dark: #7f7f7f,
@@ -32,6 +33,7 @@ $colors: (
     white: #fff
   ),
   text: (
+    amber: #fdc00f,
     black: #000,
     primary: #333,
     secondary: #00b1cd,
@@ -39,7 +41,7 @@ $colors: (
   )
 ) !default;
 
-// xs: 14px, s: 16px, m: 18px, l: 20px
+// xxs:12px, xs:14px, s:16px, m:18px, l:20px, xl:22px
 $fonts: (
   family: (
     code: #{"Source Code Pro", "Consolas", "DejaVu Sans Mono", monospace},
@@ -47,15 +49,18 @@ $fonts: (
   ),
   size: (
     base: 1rem,
+    xxs: 0.75rem,
     xs: 0.875rem,
     s: 1rem,
     m: 1.125rem,
     l: 1.25rem,
+    xl: 1.375rem,
   )
 ) !default;
 
-// xs: 8px, s: 16px, m: 24px, l: 32px
+// xxs:4px, xs:8px, s:16px, m:24px, l:32px
 $margins: (
+  xxs: 0.25rem,
   xs: 0.5rem,
   s: 1rem,
   m: 1.5rem,
@@ -63,6 +68,7 @@ $margins: (
 ) !default;
 
 $paddings: (
+  xxs: 0.25rem,
   xs: 0.5rem,
   s: 1rem,
   m: 1.5rem,

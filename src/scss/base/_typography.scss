@@ -14,12 +14,12 @@
       margin-bottom: margins(s);
     }
 
-    h1 { font-size: font-calc(1.75); }
-    h2 { font-size: font-calc(1.5); }
-    h3 { font-size: font-calc(1.25); }
-    h4 { font-size: font-calc(1); }
-    h5 { font-size: font-calc(0.75); }
-    h6 { font-size: font-calc(0.5); }
+    h1 { font-size: font-calc(1.688); }
+    h2 { font-size: font-calc(1.313); }
+    h3 { font-size: font-calc(1); }
+    h4 { font-size: font-calc(0.75); }
+    h5 { font-size: font-calc(0.5625); }
+    h6 { font-size: font-calc(0.4375); }
 
     h1,
     h2,
@@ -40,25 +40,27 @@
 
   @include media-breakpoint(breakpoints(m)) {
     body {
-      h1 { font-size: font-calc(2); }
-      h2 { font-size: font-calc(1.75); }
-      h3 { font-size: font-calc(1.5); }
-      h4 { font-size: font-calc(1.25); }
-      h5 { font-size: font-calc(1); }
-      h6 { font-size: font-calc(0.75); }
+      a,
       p { font-size: fonts(m); }
+      h1 { font-size: font-calc(1.938); }
+      h2 { font-size: font-calc(1.563); }
+      h3 { font-size: font-calc(1.25); }
+      h4 { font-size: font-calc(1); }
+      h5 { font-size: font-calc(0.8125); }
+      h6 { font-size: font-calc(0.6875); }
     }
   }
 
   @include media-breakpoint(breakpoints(l)) {
     body {
-      h1 { font-size: font-calc(2.25); }
-      h2 { font-size: font-calc(2); }
-      h3 { font-size: font-calc(1.75); }
-      h4 { font-size: font-calc(1.5); }
-      h5 { font-size: font-calc(1.25); }
-      h6 { font-size: font-calc(1); }
+      a,
       p { font-size: fonts(l); }
+      h1 { font-size: font-calc(2.125); }
+      h2 { font-size: font-calc(1.75); }
+      h3 { font-size: font-calc(1.438); }
+      h4 { font-size: font-calc(1.188); }
+      h5 { font-size: font-calc(1); }
+      h6 { font-size: font-calc(0.875); }
     }
   }
 }
