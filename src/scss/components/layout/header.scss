@@ -1,20 +1,43 @@
 @include wrapper(header, colors(primary)) {
   @include container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     .logo-link {
       margin-left: margins(s);
     }
+
+    .nav-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-right: margins(s);
+    }
+
+    .nav-button:focus {
+      outline: none;
+    }
   }
+}
+
+.header-scroll {
+  box-shadow: 0 0.125rem 0.25rem -0.0625rem colors(gray-dark);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
 }
 
 @include media-breakpoint(breakpoints(m)) {
   .header {
     .container {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-
       .logo-link {
         margin-left: margins(m);
+      }
+
+      .nav-button {
+        display: none;
       }
     }
   }
