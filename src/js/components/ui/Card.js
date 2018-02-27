@@ -10,6 +10,7 @@ const card = (props) => {
     <Element
       aria-label={props.ariaLabel}
       className={props.className}
+      id={props.id}
       onClick={props.onClick}
       onKeyUp={props.onKeyUp}
       role={props.role}
@@ -26,6 +27,7 @@ card.defaultProps = {
   children: undefined,
   className: undefined,
   element: 'div',
+  id: undefined,
   onClick: undefined,
   onKeyUp: undefined,
   role: undefined,
@@ -40,6 +42,7 @@ card.propTypes = {
   ]),
   className: PropTypes.string,
   element: PropTypes.string,
+  id: PropTypes.string,
   onClick: PropTypes.func,
   onKeyUp: PropTypes.func,
   role: PropTypes.string,

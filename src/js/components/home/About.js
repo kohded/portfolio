@@ -21,7 +21,7 @@ const about = () => {
 
   return (
     <div styleName="about">
-      <Card element="section" styleName="container">
+      <Card element="section" id="about" styleName="container">
         <img src={arnoldJpg} alt="Arnold Koh" styleName="arnold-jpg" />
         <div styleName="accounts">
           {renderAccountIcons()}

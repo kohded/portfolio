@@ -11,7 +11,7 @@ const resume = () => {
   return (
     <div styleName="resume">
       <div styleName="container">
-        <section styleName="skills">
+        <section id="resume" styleName="skills">
           <h1>SKILLS</h1>
           <div styleName="icons">
             {renderSkillIcons()}

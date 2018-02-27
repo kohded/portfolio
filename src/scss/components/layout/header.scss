@@ -23,9 +23,9 @@
 
 .header-scroll {
   box-shadow: 0 0.125rem 0.25rem -0.0625rem colors(gray-dark);
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
+  transform: translateZ(0); // Fix scroll shaking in Chrome
   z-index: 15;
 }
 

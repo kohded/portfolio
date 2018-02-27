@@ -4,13 +4,13 @@ import Layout from 'components/layout/Layout';
 import Home from 'pages/Home';
 
 const app = () => (
-  <Layout>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Layout>
       <Switch>
-        <Route path="/" component={Home} />
+        <Route component={Home} />
       </Switch>
-    </BrowserRouter>
-  </Layout>
+    </Layout>
+  </BrowserRouter>
 );
 
 export default app;
