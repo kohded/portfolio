@@ -46,7 +46,14 @@ const nav = (props) => {
           >Resume
           </Link>
         </li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li>
+          <Link
+            onClick={handleLinkClick}
+            styleName={setActiveLinkStyle('portfolio')}
+            to="#portfolio"
+          >Portfolio
+          </Link>
+        </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>

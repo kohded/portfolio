@@ -12,10 +12,6 @@
     position: absolute;
     right: margins(s);
     top: margins(s);
-
-    @include on-event-hover {
-      transform: rotate(360deg);
-    }
   }
 }
 

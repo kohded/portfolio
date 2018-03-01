@@ -1,37 +1,42 @@
-import { accountIcon, devIcon } from 'utils/require';
+import image from 'utils/require';
 
 const accountIcons = {
-  GitHub: accountIcon['github.svg'],
-  LinkedIn: accountIcon['linkedin.svg'],
-  Medium: accountIcon['medium.svg'],
+  GitHub: image['github.svg'],
+  LinkedIn: image['linkedin.svg'],
+  Medium: image['medium.svg'],
 };
 
-const skillIcons = {
-  AWS: devIcon['aws.svg'],
-  Bootstrap: devIcon['bootstrap.svg'],
-  CSM: devIcon['csm.svg'],
-  CSS3: devIcon['css3.svg'],
-  Foundation: devIcon['foundation.svg'],
-  Git: devIcon['git.svg'],
-  Handlebars: devIcon['handlebars.svg'],
-  HTML5: devIcon['html5.svg'],
-  Java: devIcon['java.svg'],
-  JavaScript: devIcon['javascript.svg'],
-  jQuery: devIcon['jquery.svg'],
-  Laravel: devIcon['laravel.svg'],
-  Linux: devIcon['linux-symbol.svg'],
-  Materialize: devIcon['materialize-symbol.svg'],
-  Meteor: devIcon['meteor.svg'],
-  MongoDB: devIcon['mongodb.svg'],
-  MySQL: devIcon['mysql.svg'],
-  Nginx: devIcon['nginx.svg'],
-  PHP: devIcon['php.svg'],
-  React: devIcon['react.svg'],
-  Sass: devIcon['sass.svg'],
-  Webpack: devIcon['webpack.svg'],
+const devIcons = {
+  AWS: image['aws.svg'],
+  Bootstrap: image['bootstrap.svg'],
+  CSM: image['csm.svg'],
+  CSS3: image['css3.svg'],
+  Foundation: image['foundation.svg'],
+  Git: image['git.svg'],
+  Handlebars: image['handlebars.svg'],
+  HTML5: image['html5.svg'],
+  Java: image['java.svg'],
+  JavaScript: image['javascript.svg'],
+  jQuery: image['jquery.svg'],
+  Laravel: image['laravel.svg'],
+  Linux: image['linux-symbol.svg'],
+  Materialize: image['materialize-symbol.svg'],
+  Meteor: image['meteor.svg'],
+  MongoDB: image['mongodb.svg'],
+  MySQL: image['mysql.svg'],
+  Nginx: image['nginx.svg'],
+  PHP: image['php.svg'],
+  React: image['react.svg'],
+  Sass: image['sass.svg'],
+  Webpack: image['webpack.svg'],
+};
+
+const portfolioIcons = {
+  FullCalendar: image['fullcalendar-symbol.svg'],
 };
 
 export {
   accountIcons,
-  skillIcons,
+  devIcons,
+  portfolioIcons,
 };

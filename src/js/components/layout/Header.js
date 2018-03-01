@@ -33,13 +33,22 @@ class Header extends Component {
   };
 
   isInViewport = (element) => {
-    const rect = element.id === 'app' ?
-      document.getElementsByClassName('banner-banner-1UdJ1')[0].getBoundingClientRect() :
-      element.getBoundingClientRect();
+    const rect = element.getBoundingClientRect();
     const headerHeight = document.getElementsByTagName('header')[0].offsetHeight;
     const top = rect.top - headerHeight;
+    let rectHeight;
 
-    return top <= 50 && top >= -rect.height * 0.5;
+    if (element.id === 'app') {
+      rectHeight = document.getElementsByClassName('banner-banner-1UdJ1')[0]
+        .getBoundingClientRect().height + headerHeight;
+    } else if (element.id === 'resume') {
+      rectHeight = document.getElementsByClassName('resume-resume-3vzoQ')[0]
+        .getBoundingClientRect().height;
+    } else {
+      rectHeight = rect.height;
+    }
+
+    return top <= 50 && top >= -rectHeight * 0.8;
   };
 
   handleNavClick = () => (

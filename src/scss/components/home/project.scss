@@ -1,0 +1,104 @@
+.project {
+  border: 1px solid colors(white);
+  cursor: pointer;
+  padding: 0;
+
+  a {
+    color: colors(amber, text);
+
+    @include on-event {
+      box-shadow: inset 0 -1px 0 0 colors(gray-medium);
+    }
+  }
+
+  a,
+  h2,
+  h3,
+  p {
+    margin-bottom: 0;
+  }
+
+  .content {
+    margin: margins(s);
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .image {
+    background-color: colors(white);
+    height: 200px;
+    padding: paddings(s);
+    position: relative;
+
+    img {
+      left: 50%;
+      max-height: calc(200px - #{margins(s)} * 2);
+      max-width: 100%;
+      min-height: 100px;
+      position: relative;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+    }
+
+    .overlay {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      span {
+        background-color: colors(primary);
+        left: 50%;
+        padding: paddings(s) paddings(m);
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .image:hover .overlay {
+    background-color: colors(black-transparent);
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .project {
+    .content {
+      margin: margins(m);
+    }
+
+    .image {
+      height: 225px;
+      padding: paddings(m);
+
+      img {
+        max-height: calc(225px - #{margins(m)} * 2);
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .project {
+    .content {
+      margin: margins(l);
+    }
+
+    .image {
+      height: 250px;
+      padding: paddings(l);
+
+      img {
+        max-height: calc(250px - #{margins(l)} * 2);
+      }
+    }
+  }
+}

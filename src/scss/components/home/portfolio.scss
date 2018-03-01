@@ -1,0 +1,67 @@
+@include wrapper(portfolio, colors(secondary), colors(white, text)) {
+  @include container {
+    padding: paddings(s);
+
+    h1 {
+      color: colors(secondary, text);
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-gap: margins(s);
+      grid-template-columns: 1fr;
+
+      .modal {
+        max-height: 80vh;
+        overflow-y: scroll;
+
+        h3:not(:first-of-type) {
+          margin-top: margins(m);
+        }
+
+        img {
+          border: 1px solid colors(gray-medium);
+          image-rendering: -webkit-optimize-contrast;
+          transform: translateZ(0);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(m)) {
+  .portfolio {
+    .container {
+      padding: paddings(m);
+
+      .projects {
+        grid-gap: margins(m);
+        grid-template-columns: 1fr 1fr;
+
+        .modal {
+          h3:not(:first-of-type) {
+            margin-top: margins(m);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint(breakpoints(l)) {
+  .portfolio {
+    .container {
+      padding: paddings(l) 0;
+
+      .projects {
+        .modal {
+          h3:not(:first-of-type) {
+            margin-top: margins(l);
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@
 
 .modal-close {
   opacity: 0;
-  transform: translate(-50%, -100vh);
+  transform: translate(-50%, -500vh);
 }
 
 @include media-breakpoint(breakpoints(m)) {

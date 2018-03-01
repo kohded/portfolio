@@ -8,6 +8,6 @@ const requireAsset = (asset) => {
   return assets;
 };
 
-const image = requireAsset(require.context('images', true, /\.(jpg|svg)$/));
+const image = requireAsset(require.context('images', true, /\.(gif|jpg|png|svg)$/));
 
 export default image;
