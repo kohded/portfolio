@@ -25,7 +25,7 @@ class Header extends Component {
       if (this.state.activeLink !== element.id) {
         if (this.isInViewport(element)) {
           const hash = element.id === 'app' ? '/' : `#${element.id}`;
-          window.history.pushState(undefined, undefined, hash);
+          window.history.replaceState(undefined, undefined, hash);
           this.setState({ activeLink: element.id });
         }
       }
