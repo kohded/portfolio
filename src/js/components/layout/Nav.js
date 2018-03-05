@@ -54,7 +54,6 @@ const nav = (props) => {
           >Portfolio
           </Link>
         </li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   );
