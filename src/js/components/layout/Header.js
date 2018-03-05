@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import Nav from 'components/layout/Nav';
-import logoImage from 'images/layout/logo.png';
 import styles from 'scss/components/layout/header.scss';
 import image from 'utils/require';
 
@@ -69,8 +68,9 @@ class Header extends Component {
     return (
       <header styleName={`header ${this.state.isPageScrolled ? 'header-scroll' : ''}`}>
         <div styleName="container">
-          <a href="/" styleName="logo-link">
-            <img alt="Logo" src={logoImage} />
+          <a href="/" styleName="logo">
+            <h1>Arnold Koh</h1>
+            <h2>Software Developer</h2>
           </a>
           <button onClick={this.handleNavClick} styleName="nav-button">
             <img src={image['menu.svg']} alt="" />
