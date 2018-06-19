@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules';
 import { Link } from 'react-router-dom';
 import Card from 'components/ui/Card';
 import links from 'data/links';
-import resumeDocx from 'docs/arnold-koh-resume.docx';
+import resumeDocx from 'docs/arnold-koh-resume.pdf';
 import image from 'utils/require';
 import styles from 'scss/components/home/about.scss';
 import { accountIcons } from 'utils/icons';
@@ -46,11 +46,11 @@ class About extends Component {
           <h1>ARNOLD KOH</h1>
           <h2>SOFTWARE DEVELOPER</h2>
           <p styleName="summary">
-            Recent graduate with project experience in all phases of software development life cycle
-            using agile methodologies, from collaborating with clients in the planning stage,
-            software and database design, code implementation, testing, to product deployment.
-            Seeking opportunities as a Software Developer to develop high quality applications while
-            utilizing best practices in a collaborative environment.
+            Seeking Software Developer position to develop high quality applications while utilizing
+            best practices in a collaborative environment. Project experience in all phases of the
+            software development life cycle using agile methodologies. From collaborating with
+            clients in the planning stage, software and database design, code implementation,
+            testing, to product deployment.
           </p>
           <a href={resumeDocx} download="arnold-koh-resume" styleName="resume-link">
             DOWNLOAD RESUME
