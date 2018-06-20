@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import { Link } from 'react-router-dom';
 import Card from 'components/ui/Card';
 import Chip from 'components/ui/Chip';
 import styles from 'scss/components/home/project.scss';
@@ -36,12 +35,12 @@ const project = (props) => {
         <h2>{props.client}</h2>
         <h3>{props.project}</h3>
         <p>{props.date}</p>
-        <Link
+        <a
+          href={props.url}
           rel="noopener noreferrer"
           target="_blank"
-          to={props.url}
         >Link
-        </Link>
+        </a>
         <div styleName="technologies">
           {renderTechnologies(props.technologies)}
         </div>

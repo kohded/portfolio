@@ -1,6 +1,5 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import { Link } from 'react-router-dom';
 import styles from 'scss/components/home/resume.scss';
 import { devIcons } from 'utils/icons';
 
@@ -32,13 +31,13 @@ const resume = () => {
           <p>Green River College &#8226; December 2016</p>
           <h2>Certified Scrum Master</h2>
           <p>Scrum Alliance &#8226; July 2016 &#8226;
-            <Link
+            <a
+              href="https://www.scrumalliance.org/community/profile/akoh17"
               rel="noopener noreferrer"
               styleName="scrum-alliance-link"
               target="_blank"
-              to="https://www.scrumalliance.org/community/profile/akoh17"
             > #543521
-            </Link>
+            </a>
           </p>
         </section>
       </div>

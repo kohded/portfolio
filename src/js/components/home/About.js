@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
-import { Link } from 'react-router-dom';
 import Card from 'components/ui/Card';
 import links from 'data/links';
 import resumeDocx from 'docs/arnold-koh-resume.pdf';
@@ -23,13 +22,13 @@ class About extends Component {
   };
 
   renderAccountIcons = () => Object.keys(accountIcons).map(name => (
-    <Link
+    <a
+      href={links.accounts[name]}
       key={name}
       rel="noopener noreferrer"
       target="_blank"
-      to={links.accounts[name]}
     ><img alt={`${name} icon`} src={accountIcons[name]} />
-    </Link>
+    </a>
   ));
 
   render() {
